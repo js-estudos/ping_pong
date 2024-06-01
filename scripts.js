@@ -30,6 +30,23 @@ function update() {
     ballPosition.x += xSpeed;
     ballPosition.y += ySpeed;
 }
+// Check if the ball has collided with the walls
+function checkCollision() {
+    let ball = {
+        left: ballPosition.x,
+        right: ballPosition.x + BALL_SIZE,
+        top: ballPosition.y,
+        bottom: ballPosition.y + BALL_SIZE
+    }
+    if(ball.left < 0 || ball.right > width) {
+        xSpeed = -xSpeed;
+    }
+    if(ball.top < 0 || ball.bottom > height) {
+        ySpeed = -ySpeed;
+    }
+}
+
+
 // Call the gameLoop function every 30 milliseconds
 function gameLoop() {
     draw();
