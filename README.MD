@@ -6,7 +6,14 @@ Este é um projeto de ping pong desenvolvido em JS e canva
 
 O objetivo deste projeto é criar um jogo de ping pong utilizando a linguagem de programação Javascript.
 
-## Funcionalidades
+## Tarefas
+    [x] Desenhar o canva (campo de jogo)
+    [x] Desenhar a bola
+    [x] Refatorar funções
+    [x] Game Loop
+    [x] Fazer a bolinha colidir na parede e não passar do espaço de jogo
+    [x] Desenhar as raquetes
+    [x] Mover raquete direita
 
 
 ## Anotações do Projeto
